@@ -1,0 +1,61 @@
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #16c2a8, #39a0eb);
+}
+
+.contanier{
+    width: 600px;
+    height: 400px;
+}
+
+.column{
+    flex-direction: column;
+    flex: 50%;
+    display: flex;
+}
+.row{
+    flex-direction: row;
+    flex: 50%;
+    display: flex;
+}
+
+.cell{
+    flex: 100%;
+}
+
+.color-1{
+    background-color: #31322c;
+}
+
+.color-2{
+    background-color: #39a0ed;
+}
+
+.color-3{
+    background-color: #1ac19f;
+}
+
+.color-4{
+    background-color: #4c6085;
+}
+
+.size-1{
+    flex: 20%;
+}
+
+.size-2{
+    flex: 80%;
+}
+.size-3{
+    flex: 40%;
+}
+
+.size-4{
+    flex: 30%;
+}
