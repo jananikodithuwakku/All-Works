@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: white;
 }
 
 .column{
@@ -30,6 +31,10 @@ body {
 
 .cell{
     flex: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
 }
 
 .cell1  {
