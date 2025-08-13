@@ -1,0 +1,116 @@
+.reverse{
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    animation-name: reverse;
+    background-color: rgb(43, 55, 70);
+    animation-duration: 4s;
+    animation-direction: reverse;
+    position: relative;
+}
+
+@keyframes reverse{
+    0%{background-color: rgb(2, 65, 59);left: 0px; top: 0px;}
+    25%{background-color: rgb(7, 214, 152);left: 200px; top: 0px;}
+    50%{background-color: rgb(58, 204, 148);left: 200px; top: 200px;}
+    75%{background-color: rgb(31, 141, 46);left: 0px; top: 200px;}
+    100%{background-color: rgb(97, 206, 46);left: 0px; top: 0px;}
+}
+
+.alternate{
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    animation-name: alternate;
+    background-color: rgb(85, 112, 145);
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes alternate{
+    0%{background-color: rgb(65, 45, 2);left: 0px; top: 0px;}
+    25%{background-color: rgb(214, 83, 7);left: 200px; top: 0px;}
+    50%{background-color: rgb(204, 63, 58);left: 200px; top: 200px;}
+    75%{background-color: rgb(141, 31, 31);left: 0px; top: 200px;}
+    100%{background-color: rgb(206, 46, 107);left: 0px; top: 0px;}
+}
+
+.alternate_reverse{
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    animation-name: alternate_reverse;
+    background-color: rgb(165, 195, 231);
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    position: relative;
+}
+
+@keyframes alternate_reverse{
+    0%{background-color: rgb(65, 45, 2);left: 0px; top: 0px;}
+    25%{background-color: rgb(214, 83, 7);left: 200px; top: 0px;}
+    50%{background-color: rgb(204, 63, 58);left: 200px; top: 200px;}
+    75%{background-color: rgb(141, 31, 31);left: 0px; top: 200px;}
+    100%{background-color: rgb(206, 46, 107);left: 0px; top: 0px;}
+}
+
+.backwards{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation-name: backwards;
+    background-color: rgb(75, 109, 150);
+    animation-duration: 4s;
+    animation-fill-mode: backwards;
+    animation-delay: 4s;
+    position: relative;
+}
+
+@keyframes backwards{
+    from{top: 0;}
+    to{top: 100px;background-color: purple;}
+}
+
+.Speed_Curve{
+    width: 100px;
+    height: 50px;
+    background-color: navy;
+    animation: speed_curve 5s;
+    color: white;
+    position: relative;
+    animation-fill-mode: forwards;
+    text-align: center;
+}
+
+#linear {animation-timing-function: linear; background-color: rgb(9, 146, 146);}
+#ease {animation-timing-function: ease; background-color: rgb(167, 98, 14);}
+#ease_in {animation-timing-function: ease-in; background-color: rgb(161, 20, 20);}
+#ease_out {animation-timing-function: ease-out; background-color: rgb(32, 34, 151);}
+#ease_in_out {animation-timing-function: ease-in-out; background-color: rgb(19, 163, 62);}
+
+@keyframes speed_curve {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+.animation{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background-color: aquamarine;
+    animation: animation 5s linear 2s infinite alternate;
+}
+
+@keyframes animation{
+    0%{background-color: rgb(65, 2, 2);left: 0px; top: 0px;}
+    25%{background-color: rgb(239, 243, 7);left: 200px; top: 0px;}
+    50%{background-color: rgb(7, 235, 83);left: 200px; top: 200px;}
+    75%{background-color: rgb(6, 200, 248);left: 0px; top: 200px;}
+    100%{background-color: rgb(142, 24, 238);left: 0px; top: 0px;}
+}
+
+

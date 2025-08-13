@@ -1,0 +1,124 @@
+.box{
+    width: 150px;
+    height: 150px;
+    animation-name: box;
+    background-color: rgb(221, 136, 217);
+    animation-duration: 4s;
+}
+
+@keyframes box{
+    from{
+        background-color: rgb(221, 136, 217);
+    }
+    to{
+        background-color: black;
+    }
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation-name: circle;
+    background-color: rgb(221, 136, 217);
+    animation-duration: 4s;
+}
+
+@keyframes circle{
+    0%{background-color: pink;}
+    25%{background-color: brown;}
+    50%{background-color: green;}
+    100%{background-color: blu;}
+}
+
+.position{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation-name: position;
+    background-color: rgb(154, 166, 180);
+    animation-duration: 4s;
+    position: relative;
+}
+
+@keyframes position{
+    0%{background-color: darkblue;left: 0px; top: 0px;}
+    25%{background-color: rgb(27, 56, 189);left: 200px; top: 0px;}
+    50%{background-color: rgb(58, 116, 204);left: 200px; top: 200px;}
+    75%{background-color: rgb(31, 97, 141);left: 0px; top: 200px;}
+    100%{background-color: rgb(46, 174, 206);left: 0px; top: 0px;}
+}
+
+.delay{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation-name: delay;
+    background-color: rgb(43, 55, 70);
+    animation-duration: 4s;
+    animation-delay: 2s;
+    position: relative;
+}
+
+@keyframes delay{
+    0%{background-color: rgb(2, 65, 59);left: 0px; top: 0px;}
+    25%{background-color: rgb(7, 214, 152);left: 200px; top: 0px;}
+    50%{background-color: rgb(58, 204, 148);left: 200px; top: 200px;}
+    75%{background-color: rgb(31, 141, 46);left: 0px; top: 200px;}
+    100%{background-color: rgb(97, 206, 46);left: 0px; top: 0px;}
+}
+
+.delay_after{
+    width: 150px;
+    height: 150px;
+    animation-name: delay_after;
+    background-color: rgb(40, 42, 44);
+    animation-duration: 4s;
+    animation-delay: -2s;
+    position: relative;
+}
+
+@keyframes delay_after{
+    0%{background-color: rgb(53, 65, 2);left: 0px; top: 0px;}
+    25%{background-color: rgb(193, 214, 7);left: 200px; top: 0px;}
+    50%{background-color: rgb(141, 204, 58);left: 200px; top: 200px;}
+    75%{background-color: rgb(141, 112, 31);left: 0px; top: 200px;}
+    100%{background-color: rgb(206, 105, 46);left: 0px; top: 0px;}
+}
+
+.run_times {
+    width: 150px;
+    height: 150px;
+    animation-name: run_times;
+    background-color: rgb(154, 166, 180);
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    position: relative;
+}
+
+@keyframes run_times{
+    0%{background-color: darkblue;left: 0px; top: 0px;}
+    25%{background-color: rgb(27, 56, 189);left: 200px; top: 0px;}
+    50%{background-color: rgb(58, 116, 204);left: 200px; top: 200px;}
+    75%{background-color: rgb(31, 97, 141);left: 0px; top: 200px;}
+    100%{background-color: rgb(46, 174, 206);left: 0px; top: 0px;}
+}
+
+.infinite{
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    animation-name: delay;
+    background-color: rgb(43, 55, 70);
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes delay{
+    0%{background-color: rgb(2, 65, 59);left: 0px; top: 0px;}
+    25%{background-color: rgb(7, 214, 152);left: 200px; top: 0px;}
+    50%{background-color: rgb(58, 204, 148);left: 200px; top: 200px;}
+    75%{background-color: rgb(31, 141, 46);left: 0px; top: 200px;}
+    100%{background-color: rgb(97, 206, 46);left: 0px; top: 0px;}
+}
