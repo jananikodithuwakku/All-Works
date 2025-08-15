@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo3").innerHTML = "The sun shines brightly.";
+        }
+    </script>
+
+</head>
+<body>
+    <h4 id="demo">JavaScript can change html content.</h4>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Do it with JavaScript"'>Click to change</button>
+
+    <h2 id="demo1">JavaScript can change html style</h2>
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize='30px'">Click</button>
+
+    <h2 id="demo2">JavaScript can change html element</h2>
+    <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click</button>
+
+    <h3 id="demo3">A Paragraph</h3>
+    <button type="button" onclick="myFunction()">Click</button>
+
+    <p id="demo4">Hello</p>
+    <button onclick="myFunction1()">Click</button>
+    <script src="Js.js"></script>
+
+    <h3>document.write</h3>
+    <script>
+        document.write(5 + 6);
+    </script>
+
+    <h3>document.write button</h3>
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+    <h3>alert</h3>
+    <script>
+        window.alert(7+5);
+    </script>
+
+    <script>
+        console.log(9 + 6);
+    </script>
+
+    <h3>statement</h3>
+    <p id="demo5"></p>
+    <script>
+        let a, b, c;
+        a = 6; b = 8; c = a + b;
+        document.getElementById("demo5").innerHTML = c;
+    </script>
+
+    <p id="demo6"></p>
+    <script>
+        document.getElementById("demo6").innerHTML = "Janani" + " " + " Kodithuwakku"
+    </script>
+
+    <p id="demo7"></p>
+    <script>
+        let x, y;
+        x = 5 + 6;
+        y = x * 10;
+        document.getElementById("demo7").innerHTML = y;
+    </script>
+
+    <p id="demo8"></p>
+    <script>
+        const price1 = 15;
+        const price2 = 29;
+        let total = price1 + price2;
+        document.getElementById("demo8").innerHTML = "Total: " + total;
+    </script>
+
+    <p id="demo9"></p>
+    <script>
+        const pi = 30.100;
+        const py = "30.100";
+        let person = "John Doe";
+        document.getElementById("demo9").innerHTML = pi + "<br>" + py + "<br>" + person;
+    </script>
+
+    <p id="demo10"></p>
+    <script>
+        let last_Name = "Kodi", price = 12.56, flowers = "rose";
+        document.getElementById("demo10").innerHTML = flowers;
+    </script>
+
+    <p id="demo11"></p>
+    <script>
+        let lName;
+        document.getElementById("demo11").innerHTML = lName;
+    </script>
+
+    <p id="demo12"></p>
+    <script>
+        let z = "5" + 5 + 8;
+        document.getElementById("demo12").innerHTML = z;
+    </script>
+
+    <p id="demo13"></p>
+    <script>
+        const cars = ["Saab", "Volvo", "BMW"];
+        cars[1] = "Toyota";
+        cars.push("Audi");
+        document.getElementById("demo13").innerHTML = cars; 
+    </script>
+
+    <p id="demo14"></p>
+    <script>
+        const car = {type:"Fiat" , color:"blue" , price: 1200000};
+        car.color = "red";
+        car.owner = "john";
+        document.getElementById("demo14").innerHTML = "Car color is " + car.color;
+    </script>
+
+    <p id="demo15"></p>
+    <script>
+        let text1 = "5";
+        let text2 = "15";
+        let result = text1 > text2;
+        document.getElementById("demo15").innerHTML =  result;
+    </script>
+
+    <p id="demo16"></p>
+    <script>
+        document.getElementById("demo16").innerHTML = 100 + 250 * 3;
+    </script>
+
+
+</body>
+</html>
