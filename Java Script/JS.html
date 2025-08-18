@@ -130,6 +130,57 @@
         document.getElementById("demo16").innerHTML = 100 + 250 * 3;
     </script>
 
+    <input id="age" value="18" />
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo17"></p>
+    <script>
+        function myFunction() {
+        let age = Number(document.getElementById("age").value); // Get the value from the input field and convert it to a number
+        let voteable = (age < 18) ? "Too young":"Old enough"; //Use the ternary operator to check if the age is less than 18, If true, voteable = "Too young"; otherwise, "Old enough"
+        document.getElementById("demo17").innerHTML = voteable + " to vote.";
+    }
+    </script>
+
+    <p id="demo18"></p>
+    <script>
+        let text = "12873905"; // The input string of numbers 
+        let min = Math.min(...text); // Use spread operator to split the string into individual characters
+        let max = Math.max(...text);
+        document.getElementById("demo18").innerHTML =
+        "Minimum is: " + min + "<br>Maximum is: " + max;
+    </script>
+
+    <p id="demo19"></p>
+    <script>
+        function toCelsius(f) {
+            return (5/9) * (f-32);
+        }
+
+        let value = toCelsius();
+        document.getElementById("demo19").innerHTML = value;
+    </script>
+
+    <p id="demo20"></p>
+    <script>
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+        const myFather = new Person("John", "Doe", 50, "blue");
+        const myMother = new Person("Sally", "Rally", 48, "green");
+        document.getElementById("demo20").innerHTML = "My father's eye color is " + myFather.eyeColor + ". My mother is " + myMother.age + "."; 
+    </script>
+
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+
+    <p id="demo21"></p>
+    <script>
+        let j = new Number(500);
+        let k = new Number(500);
+        document.getElementById("demo21").innerHTML = (j===k);
+    </script>
 
 </body>
 </html>
