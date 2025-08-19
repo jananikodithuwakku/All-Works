@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let paragraph = prompt("Enter Paragraph");
+        let words = paragraph.trim().split(/\s+/);  //trim() = makes sure there are no leading or trailing spaces. split(" ")= breaks the paragraph into an array of words.
+        let wordCount = words.length;
+        alert("Word Count: " + wordCount);
+        //document.getElementById('demo').innerHTML = "Word Count: " + wordCount;
+    </script>
+
+</body>
+</html>
