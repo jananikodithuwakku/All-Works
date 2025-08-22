@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function Add(a,b) {
+            return a+ b;
+        }
+
+        function Subtract(a,b) {
+            return a - b;
+        }
+
+        function Multiply(a,b) {
+            return a * b;
+        }
+
+        function devide(a,b) {
+            return a / b;
+        }
+
+        const num1 = Number(prompt("Enter number 1"))
+        const num2 = Number(prompt("Enter number 2"))
+        const Choice = Number(prompt("Choose operation:\n1 = Add \n2 = Subtract \n3 = Multiply \n4 = devide"))
+        
+        if (Choice === 1){
+            alert("Result is " + Add(num1,num2));
+        }
+        else if (Choice === 2){
+            alert("Result is " + Subtract(num1,num2));
+        }
+        else if (Choice === 3){
+            alert("Result is " + Multiply(num1,num2));
+        }
+        else if (Choice === 4){
+            alert("Result is " + devide(num1,num2));
+        }
+        else{
+            alert("Invalide Choice ")
+        }
+
+
+    </script>
+</body>
+</html>

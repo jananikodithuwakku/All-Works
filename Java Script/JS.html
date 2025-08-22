@@ -182,5 +182,31 @@
         document.getElementById("demo21").innerHTML = (j===k);
     </script>
 
+    <p id="demo22"></p>
+    <script>
+        let fruits = ["Banana", "Apple", "Orange","Mango"]
+        let fLen = fruits.length;
+
+        let tex = "<ul>";
+           for(let i = 0; i<fLen; i++){
+            tex += "<li>" + fruits [i] + "</li>";
+           } 
+        tex += "</ul>";
+        
+        document.getElementById('demo22').innerHTML = tex;
+    </script>
+
+    <p id="demo23"></p>
+    <script>
+        var points = new Array(40);
+        document.getElementById("demo23").innerHTML = points;  
+    </script>
+
+    <p id="demo24"></p>
+    <script>
+        var points = [40];
+        document.getElementById("demo24").innerHTML = points;  
+    </script>
+
 </body>
 </html>

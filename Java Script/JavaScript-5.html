@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function getArea(w, h) {
+            return w * h
+        }
+
+        function getVolume(w, h, l) {
+            return w * h * l;
+        }
+        const width = Number(prompt("Entre Width"))
+        const height = Number(prompt("Entre height"))
+        const length = Number(prompt("Entre length"))
+        const type = Number(prompt("1= area, 2= volume"))
+
+        if (type === 1) {
+            alert("Area is: " + getArea(width, height));
+        }
+        else if (type === 2) {
+            alert(" Volume is: " + getVolume(width, height, length));
+        }
+        else {
+            alert("Invalid Choice.")
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const num1 = Number(prompt("Enter Number"))
+
+        let Result = ""
+
+        if(num1 % 2 === 0){
+            Result = "This number is Even: " + num1;
+        }
+        else{
+            Result = "This number is Odd: " + num1;
+        }
+
+        document.getElementById('demo').innerHTML = Result;
+    </script>
+</body>
+</html>

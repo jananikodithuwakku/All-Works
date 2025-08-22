@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const num = Number(prompt("Enter number: "))
+        
+        let Message = ""
+
+        if (num >0){
+            Message = "Positive: " + num;
+        }
+        else if (num < 0){
+            Message = "Negetive: " +num;
+        }
+        else {
+            Message = "The number is Zero"
+        }
+
+        document.getElementById('demo').innerHTML = Message;
+
+    </script>
+</body>
+</html>
